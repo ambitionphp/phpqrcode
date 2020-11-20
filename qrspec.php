@@ -394,14 +394,14 @@ namespace PHPQRCode;
         public static function putFinderPattern(&$frame, $ox, $oy)
         {
             $finder = array(
-                "\xc1\xc1\xc1\xc1\xc1\xc1\xc1",
-                "\xc1\xc0\xc0\xc0\xc0\xc0\xc1",
-                "\xc1\xc0\xc1\xc1\xc1\xc0\xc1",
-                "\xc1\xc0\xc1\xc1\xc1\xc0\xc1",
-                "\xc1\xc0\xc1\xc1\xc1\xc0\xc1",
-                "\xc1\xc0\xc0\xc0\xc0\xc0\xc1",
-                "\xc1\xc1\xc1\xc1\xc1\xc1\xc1"
-            );                            
+                "\xc0\xc0\xc0\xc0\xc0\xc0\xc0",
+                "\xc0\xc0\xc0\xc0\xc0\xc0\xc0",
+                "\xc0\xc0\xc0\xc0\xc0\xc0\xc0",
+                "\xc0\xc0\xc0\xc0\xc0\xc0\xc0",
+                "\xc0\xc0\xc0\xc0\xc0\xc0\xc0",
+                "\xc0\xc0\xc0\xc0\xc0\xc0\xc0",
+                "\xc0\xc0\xc0\xc0\xc0\xc0\xc0"
+            );
             
             for($y=0; $y<7; $y++) {
                 QRstr::set($frame, $ox, $oy+$y, $finder[$y]);
